@@ -1,10 +1,11 @@
 import React from "react";
 
-const DefaultLayout = () =>{
+const DefaultLayout = (props) =>{
     return(
-        <div>
+        <>
             <h1 className="text-xl">Default Layout</h1>
-        </div>
+            {props.children}
+        </>
     )
 }
 export default DefaultLayout;
