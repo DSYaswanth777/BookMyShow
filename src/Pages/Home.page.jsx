@@ -1,6 +1,7 @@
 import React from "react"
 //Components
 import EnterainmentCardSlider from "../components/Enterainment/Enterainmentcard.component";
+import Premier from "../components/Premier/Premier.component";
 const HomePage = () =>{
     return (
         <>
@@ -9,8 +10,9 @@ const HomePage = () =>{
                   The best of Enterainment 
                   </h1>
         <EnterainmentCardSlider/>
+        <Premier/>
         </div>
         </>
     )
 };
-export default HomePage; 
+export default HomePage;
