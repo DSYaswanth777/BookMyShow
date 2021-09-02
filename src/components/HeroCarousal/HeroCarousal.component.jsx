@@ -43,8 +43,8 @@ const HeroCarousal = () => {
     <>
       <div className="lg:hidden">
         <HeroSlider {...settings}>
-          {images.map((image) => (
-            <div className="w-full h-56 md:h-80 py-3 ">
+          {images.map((image,id) => (
+            <div className="w-full h-56 md:h-80 py-3 " key={id}>
               <img
                 src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
                 alt="testing"
@@ -57,8 +57,8 @@ const HeroCarousal = () => {
 
       <div className="hidden lg:block">
         <HeroSlider {...settingsLG}>
-          {images.map((image) => (
-            <div className="w-full h-96 px-2 py-3">
+          {images.map((image,id) => (
+            <div className="w-full h-96 px-2 py-3"key={id} >
               <img
                 src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
                 alt="testing"
